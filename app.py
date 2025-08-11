@@ -7,7 +7,7 @@ st.title('Simple LLM App')
 # Creating a sidebar input widget for the OpenAI API key, input type is password for security
 google_api_key = st.sidebar.text_input('OpenAI API Key', type='password')
 
-# Defining a function to generate a response using the OpenAI language model
+# Defining a function to generate a response using the GeminiAI language model
 def generate_response(input_text):
     # Initializing the GeminiAI language model with a specified temperature and API key
     llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=google_api_key)
